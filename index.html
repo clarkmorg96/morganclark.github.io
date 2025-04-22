@@ -7,11 +7,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0d0d0d;
-      --fg: #e0e0e0;
-      --accent: #00e0ff;
-      --card-bg: #1a1a1a;
-      --highlight: #ff0080;
+      --bg: #f4f6f8;
+      --fg: #1e1e1e;
+      --accent: #007acc;
+      --card-bg: #ffffff;
+      --highlight: #d63384;
     }
 
     * {
@@ -63,7 +63,7 @@
       padding: 1.5rem 2rem;
       margin-bottom: 2rem;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       transition: transform 0.2s ease-in-out;
     }
 
@@ -78,7 +78,7 @@
     footer {
       text-align: center;
       margin-top: 4rem;
-      color: #888;
+      color: #555;
       font-size: 0.9rem;
     }
 
@@ -92,16 +92,18 @@
     <header>
       <h1>Morgan Clark</h1>
       <p class="highlight">Software & Security Engineer | Computer Scientist | Team Leader</p>
-      <p><a href="mailto:morganclarkofficial96@gmail.com">morganclarkofficial96@gmail.com</a> | <a href="https://www.linkedin.com/in/morgan-clark-708971258/" target="_blank">LinkedIn</a></p>
+      <p><a href="mailto:morganclarkofficial96@gmail.com">morganclarkofficial96@gmail.com</a> |
+         <a href="https://www.linkedin.com/in/morgan-clark-708971258/" target="_blank">LinkedIn</a> |
+         <a href="/resume.pdf" target="_blank">Resume</a></p>
     </header>
 
     <section>
       <h2>🚀 About Me</h2>
       <div class="card">
         <p>Hey there! I’m Morgan Clark, a passionate and detail-oriented Computer Science student graduating in Spring 2025 from the University of Wisconsin-Parkside. I bring over 4 years of experience in software and security engineering, with a strong background in system architecture, secure coding practices, and full-stack development.</p>
-        <p>I’m the founder and president of the university's computer club, where I organize hackathons, tech talks, and collaborative development projects. I’ve served as a mentor and leader in both academic and professional environments—guiding peers through technical challenges and agile workflows. I have a deep curiosity for how systems interact, from the lowest levels of hardware to user-facing design.</p>
-        <p>At Costco, I contributed to major tech initiatives and authored a widely adopted internal technology operations handbook. I’ve also developed mobile apps, encryption utilities, and real-time data platforms using Java, Kotlin, Firebase, and FlutterFlow. My work reflects my commitment to secure, scalable, and efficient software systems.</p>
-        <p>Outside of engineering, I’m driven by leadership, logic, and self-mastery. I enjoy refining team workflows, documenting internal systems, and helping others grow in the tech space. I view technical education as a tool for empowerment—and I use every project to push the boundary of what’s possible.</p>
+        <p>I’m the founder and president of the university's computer club, where I organize hackathons, tech talks, and collaborative development projects. I’ve served as a mentor and leader in both academic and professional environments—guiding peers through technical challenges and agile workflows. I’m deeply interested in systems thinking, automation, cybersecurity trends, and the evolution of user interaction design.</p>
+        <p>My professional experience spans from retail technology at Costco, where I authored an internal operations handbook, to building intelligent apps and secure Java frameworks. I thrive in dynamic, high-responsibility environments where I can architect, debug, and deploy robust systems.</p>
+        <p>Outside of work, I dive into algorithm design, reverse engineering, and DevSecOps practices for fun. I'm always experimenting with new technologies and exploring ways to bring structure to chaos through code. I believe in building meaningful software that solves real-world problems.</p>
       </div>
     </section>
 
@@ -111,11 +113,11 @@
         <ul>
           <li><strong>Languages:</strong> Java, Kotlin, Swift, Python, C++, SQL, HTML, CSS, JavaScript</li>
           <li><strong>Frameworks & Tools:</strong> Firebase, FlutterFlow, React, Git, IntelliJ, VSCode, Figma, Xcode, Android Studio</li>
-          <li><strong>Cloud & DevOps:</strong> GitHub Actions, Firebase, basic AWS (S3, EC2), CI/CD principles</li>
-          <li><strong>Security:</strong> RSA Encryption, OWASP Top 10, Secure Authentication, Input Validation, Threat Modeling</li>
-          <li><strong>Certifications:</strong> Google Kotlin Certification | Software & Security Engineering (UW-Parkside)</li>
-          <li><strong>Leadership:</strong> Club President, Scrum Master, Peer Mentor, Workshop Organizer</li>
-          <li><strong>Professional Skills:</strong> Agile development, Technical writing, Software Documentation, Public Speaking</li>
+          <li><strong>Cloud & DevOps:</strong> GitHub Actions, Firebase, AWS (S3, EC2), CI/CD, Docker (basic)</li>
+          <li><strong>Security:</strong> RSA Encryption, OWASP Top 10, Secure Authentication, Threat Modeling, Role-Based Access Control</li>
+          <li><strong>Certifications:</strong> Google Kotlin Certification, UW-Parkside Security Engineering Certification</li>
+          <li><strong>Leadership & Communication:</strong> Club President, Scrum Master, Peer Mentor, Documentation Writer, Technical Presenter</li>
+          <li><strong>Extras:</strong> UI/UX Design, Agile Methodologies, Test-Driven Development, Git Collaboration</li>
         </ul>
       </div>
     </section>
@@ -125,32 +127,32 @@
 
       <div class="card">
         <h3>📅 Student Calendar App</h3>
-        <p>A fully responsive calendar application built using FlutterFlow and Firebase. Allows students to view daily events, switch months, and receive push notifications. Integrated Firebase Auth, Firestore, and custom UI themes. Key highlight: dynamic event loading and seamless UX design across mobile devices.</p>
+        <p>Built using FlutterFlow and Firebase, this calendar app supports student productivity by offering dynamic event views, notifications, and responsive month navigation. Firebase handles user auth and event syncing. Designed to be modular, themed, and extendable for future feature sets.</p>
       </div>
 
       <div class="card">
         <h3>🌾 Agi World</h3>
-        <p>An intelligent agriculture assistant that supports farmers in selecting crops and nutrients based on local conditions. Uses location services, elevation data, and precipitation trends to optimize decision-making. The app includes a problem-solution engine for known farming issues and displays AI-generated suggestions per crop and soil type.</p>
+        <p>A smart decision-making platform for agriculture. Based on geolocation and environmental conditions, Agi World uses custom logic to offer real-time guidance to farmers. It connects data science with accessible UX for rural tech empowerment.</p>
       </div>
 
       <div class="card">
         <h3>📘 Costco Tech Handbook</h3>
-        <p>Created and distributed a comprehensive handbook for warehouse tech operations. Documented forklift drop list systems, end-of-day procedures, and inventory workflows. Designed in a clear format with diagrams and examples. This handbook is now part of regional training resources.</p>
+        <p>Produced a thorough technology operations guide used by warehouse tech staff at Costco. This handbook streamlined training, improved daily task clarity, and was praised for its practical visual layout and tech documentation accuracy.</p>
       </div>
 
       <div class="card">
         <h3>🔐 RSA Encryption Utility in Java</h3>
-        <p>Developed an end-to-end encryption/decryption library in Java using RSA algorithm. Implemented public/private key generation, secure data transformation, and file I/O. Focused on byte-level security, compatibility across modules, and reusable encryption logic for custom tools.</p>
+        <p>Implemented a fully functional RSA encryption/decryption library with secure key generation, transformation utilities, and local storage support. Used in projects requiring secure offline data handling and cryptographic demonstration.</p>
       </div>
 
       <div class="card">
         <h3>📊 Compressed Binary Search Research</h3>
-        <p>Innovated a binary search approach that compresses large data sets using dual splitting strategies—numerical structure and parity (odd/even). Conducted Java benchmarks against traditional search algorithms. Documented results and JVM behavior in a published academic research project.</p>
+        <p>Designed and analyzed an optimized binary search approach. Implemented multiple variants, measured JVM performance impacts, and authored a research paper comparing compression-aware search times to traditional methods. Data presented in university symposium.</p>
       </div>
     </section>
 
     <footer>
-      <p>© 2025 Morgan Clark. Engineered with code, caffeine, and chaos. | <a href="https://www.linkedin.com/in/morgan-clark-708971258/" target="_blank">Connect on LinkedIn</a></p>
+      <p>© 2025 Morgan Clark. Engineered with code, caffeine, and curiosity. | <a href="https://www.linkedin.com/in/morgan-clark-708971258/" target="_blank">LinkedIn</a></p>
     </footer>
   </div>
 </body>
