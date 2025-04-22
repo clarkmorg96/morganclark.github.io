@@ -7,10 +7,10 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0d1117;
-      --fg: #c9d1d9;
+      --bg: #0f0f0f;
+      --fg: #e0e0e0;
       --accent: #00ffff;
-      --card-bg: #161b22;
+      --card-bg: #1a1a1a;
     }
 
     * {
@@ -24,7 +24,7 @@
       background-color: var(--bg);
       color: var(--fg);
       padding: 2rem;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
@@ -38,15 +38,33 @@
     }
 
     h2 {
-      border-left: 4px solid var(--accent);
-      padding-left: 0.5rem;
-      margin-bottom: 1rem;
       margin-top: 2rem;
-      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
     }
 
-    p, li {
-      font-size: 1rem;
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     a {
@@ -54,38 +72,11 @@
       text-decoration: none;
     }
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .project {
-      background: var(--card-bg);
-      padding: 1rem;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
-      transition: transform 0.2s;
-    }
-
-    .project:hover {
-      transform: translateY(-3px);
-    }
-
     footer {
-      margin-top: 4rem;
       text-align: center;
+      margin-top: 4rem;
       font-size: 0.9rem;
-      color: #555;
-    }
-
-    ul {
-      margin-left: 1rem;
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1.2rem; }
+      color: #888;
     }
   </style>
 </head>
@@ -93,55 +84,50 @@
   <div class="container">
     <header>
       <h1>Morgan Clark</h1>
-      <p>Software & Security Engineer · Tech Leader · Computer Scientist</p>
-      <p><a href="mailto:morganclarkofficial96@gmail.com">morganclarkofficial96@gmail.com</a></p>
+      <p>Computer Scientist | Software & Security Engineer | Tech Leader</p>
+      <p><a href="mailto:morganclarkofficial96@gmail.com">morganclarkofficial96@gmail.com</a> | <a href="https://www.linkedin.com/in/morgan-clark-708971258/" target="_blank">LinkedIn</a></p>
     </header>
 
-    <section>
-      <h2>🧠 About Me</h2>
-      <p>I'm a senior Computer Science student at the University of Wisconsin-Parkside, graduating Spring 2025. With 4+ years of professional experience in software and security engineering, I've held multiple roles including Scrum Master, Security Architect, and Full Stack Developer. I specialize in building secure, scalable systems and leading technical teams through agile development.</p>
-      <p>I've worked extensively in front-end and back-end environments, with tech stacks including Java, Kotlin, Swift, Python, C++, SQL, and Firebase. I’ve developed mobile apps, custom admin tools, internal handbooks, and real-time cloud-based features for both startups and enterprise environments like Costco.</p>
-      <p>As the founder and president of my university's computer club, I’ve also led coding events, workshops, and project-based mentoring to help others grow their technical skills while building mine. Whether it's app dev, data security, or solving complex logic puzzles — I live for the challenge.</p>
+    <section class="section">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I'm a senior Computer Science student at the University of Wisconsin-Parkside, graduating Spring 2025. With over 4 years of experience in software and security engineering, I specialize in designing scalable solutions, leading development teams, and building secure systems. I'm also the founder and president of the university computer club, organizing hackathons, workshops, and peer mentoring programs.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>📂 Projects</h2>
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="card">
+        <ul>
+          <li>Languages: Java, Kotlin, Swift, Python, C++, SQL</li>
+          <li>Tools: Firebase, Figma, IntelliJ, Git</li>
+          <li>Areas: Front-End & Back-End Dev, Security Architecture, Cloud Integration</li>
+          <li>Certifications: Google Kotlin, Software & Security Engineering (UW-Parkside)</li>
+        </ul>
+      </div>
+    </section>
 
-      <div class="project">
+    <section class="section">
+      <h2>Projects</h2>
+
+      <div class="card">
         <h3>📅 Calendar App for Students</h3>
-        <p>Dynamic calendar built in FlutterFlow with Firebase integration. Handles events, notifications, and theme switching for student life management.</p>
+        <p>Built in FlutterFlow with Firebase backend. Features dynamic day switching, event scheduling, and UI theme selection. Designed for student productivity.</p>
       </div>
 
-      <div class="project">
+      <div class="card">
         <h3>🌾 Agi World</h3>
-        <p>Geolocation-based crop advisor for farmers. Suggests nutrients and optimizes crop selection using soil, altitude, and weather data.</p>
+        <p>Geolocation-based farm assistant that suggests optimal crops, nutrients, and fixes for field issues based on weather and soil data.</p>
       </div>
 
-      <div class="project">
+      <div class="card">
         <h3>📘 Costco Tech Handbook</h3>
-        <p>A field manual for Costco’s warehouse tech operations. Covers drop lists, inventory protocols, and tech guidance. Rolled out to multiple regions.</p>
+        <p>Created an operational guidebook for warehouse employees detailing inventory protocols, technology systems, and drop list management. Adopted across regional locations.</p>
       </div>
-    </section>
-
-    <section>
-      <h2>🎓 Certifications & Skills</h2>
-      <ul>
-        <li>Google Kotlin Certification</li>
-        <li>Software & Security Engineering – University of Wisconsin-Parkside</li>
-        <li>Java · Python · Kotlin · Swift · SQL · C++ · Figma · Firebase</li>
-        <li>Agile · Scrum · Cybersecurity · Database Design · Cloud Integration</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>📞 Contact</h2>
-      <p>Email: <a href="mailto:morganclarkofficial96@gmail.com">morganclarkofficial96@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/morganclark" target="_blank">github.com/morganclark</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/morgan-clark-708971258/" target="_blank">linkedin.com/in/morgan-clark-708971258</a></p>
     </section>
 
     <footer>
-      <p>© 2025 Morgan Clark. Powered by caffeine and critical thinking.</p>
+      <p>© 2025 Morgan Clark. Built with code, caffeine, and stubborn persistence.</p>
     </footer>
   </div>
 </body>
